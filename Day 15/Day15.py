@@ -22,7 +22,7 @@ class Memory_Game:
     
     def _take_turn(self):
         numberHist = self.numbersHist[self.lastNumber]
-        if (len(self.numbersHist[self.lastNumber]) == 1):
+        if (len(numberHist) == 1):
             self._add_number(0)
         else:
             self._add_number(numberHist[-1] - numberHist[-2])
